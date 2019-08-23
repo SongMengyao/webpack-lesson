@@ -1,0 +1,17 @@
+{
+  "name": "index6",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index1.js",
+  "scripts": {
+    "bundle": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  }
+}
