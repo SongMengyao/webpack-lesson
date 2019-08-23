@@ -8,5 +8,5 @@
 - 初始化项目: npm init -y
 - 安装依赖: npm i webpack webpack-cli --save-dev
 
-项目运行步骤：
+项目运行(打包)步骤：
 - 用 webpack 翻译 index.js: npx webpack index.js
