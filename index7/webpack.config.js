@@ -9,9 +9,16 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.jpg$/,
+      test: /\.(jpg|png|gif)$/,
       use: {
-        loader: 'file-loader'
+        loader: 'file-loader',
+        options: {
+          // 占位符
+          // 使得打包之后的图片名字和源文件图片名字一样
+          name: '[name].[ext]',
+          // 把图片打包到 dist 文件夹下的 imgs 文件夹下面
+          outputPath: 'imgs/'
+        }
       }
     }]
   },
