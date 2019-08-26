@@ -18,6 +18,3 @@
 
 - 安装特定版本的 webpack
   - npm install webpack@版本号 --save-dev
-
-- 项目运行步骤
-  - 安装依赖：npm i
