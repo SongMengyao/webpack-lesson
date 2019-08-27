@@ -27,7 +27,18 @@ module.exports = {
       use: ['style-loader', 'css-loader']
     }, {
       test: /\.scss$/,
-      use: ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader']  // postcss-loader 是使样式的厂商前缀可以正常使用，比如 -webkit-
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 2, // 确保入口 scss 文件中 import 进来的其他 scss 文件也可以从下到上使用所有 loader
+            modules: true // 开启 css 模块化打包
+          }
+        },
+        'sass-loader',
+        'postcss-loader' // postcss-loader 是使样式的厂商前缀可以正常使用，比如 -webkit-
+      ]
     }]
   },
   output: { // 打包出的文件配置

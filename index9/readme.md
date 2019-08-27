@@ -65,3 +65,6 @@
   ```
   先执行 sass-loader, 在执行 css-loader, 最后执行 style-loader
 
+- 问题：
+  - autoprefixer 没效果，并没有给样式添加厂商前缀
+
