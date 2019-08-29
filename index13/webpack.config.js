@@ -54,7 +54,7 @@ module.exports = {
     new CleanWebpackPlugin()
   ],
   output: { // 打包出的文件配置
-    // publicPath: 'http://songmengyao.com', // 打包出的 js 文件在 html 引入时，src 路径前默认加上的路径
+    publicPath: '/', // 打包出的 js 文件在 html 引入时，src 路径前默认加上的路径
     filename: '[name].js', // 多页打包，打包出的文件的name的配置
     path: path.resolve(__dirname, 'dist') // 这里的 __dirname 指的是 webpack.config.js 文件所在目录，dist 是打包出的文件夹的name。这一行 code 指的是打包出的文件夹和 webpack.config.js 文件在同一目录下，并且名字叫 bundle
   }
