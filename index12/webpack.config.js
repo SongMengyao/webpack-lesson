@@ -11,6 +11,7 @@ module.exports = {
     main: './src/index1.js',
     sub: './src/index1.js',
   },
+  devtool: 'source-map', // 是一种映射关系：打包文件映射到对应的js文件，可以定位bug所在的位置。但是会减慢项目打包的速度，一般只在开发环境使用
   module: {
     rules: [{
       test: /\.(jpg|png|gif)$/,
